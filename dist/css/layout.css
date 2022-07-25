@@ -64,7 +64,7 @@
         transition: 0.4s;
     }
     
-    nav .logo {
+    nav .mark-scroll {
         position: absolute;
         display: grid;
         place-items: center;
@@ -133,7 +133,7 @@
         opacity: 1;
     }
     
-    .scrollPageNav .logo {
+    .scrollPageNav .mark-scroll {
         transform: translateX(-999px);
         background-color: #070707;
         transition: 0.4s;
@@ -245,7 +245,6 @@
         margin: 38px auto 0;
         padding: 10px;
         width: 90vmax;
-        height: 18vmax;
         border-radius: 8px;
         flex-direction: column;
         background-color: #161616;
@@ -276,25 +275,31 @@
         color: #ffffff;
     }
     
-    .content .tentang p {
-        background-color: #242424;
-        margin-top: 0;
-        padding: 10px 20px;
-        transition: 0.5s;
-        border-radius: 0 0 8px 8px;
+    .content .tentang summary:hover {
+        border-radius: 8px;
+        padding: auto;
+        background: #ff33cc;
     }
     
-    .line {
+    .content .tentang summary:active {
+        padding: auto;
+        color: #0e0e0e;
+        background-color: #eee4e4;
+        transition: 0.2s;
+    }
+    
+    .content .tentang p {
         position: absolute;
-        background: url("/img-abstract/Abstract-line.svg");
-        background-repeat: no-repeat;
-        filter: opacity(0.5);
-        color: #5cff33;
-        width: 100%;
-        top: 110px;
-        left: 0;
-        bottom: 0;
-        z-index: -10;
+        left: 3.9vmax;
+        display: grid;
+        border-radius: 8px;
+        width: 88.7vmax;
+        height: 8vmax;
+        padding: 20px;
+        color: #ffffff;
+        background-color: #242424;
+        transition: 0.5s;
+        border-radius: 8px;
     }
     
     .menu-overlay {
