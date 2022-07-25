@@ -138,12 +138,15 @@
         background-color: #070707;
         transition: 0.4s;
     }
-    
-    main {
+    /* main {
         display: flex;
         padding: 0 100px;
         height: 100vh;
         align-items: center;
+    } */
+    
+    main {
+        width: 100%;
     }
     
     .ml10 {
