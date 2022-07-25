@@ -1,0 +1,296 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    body::-webkit-scrollbar {
+        width: 0.8vmax;
+    }
+    
+    body::-webkit-scrollbar-track {
+        opacity: 0;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #242424;
+        border-radius: 50px;
+    }
+    
+    nav {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        width: 100vw;
+        height: 85px;
+        padding: 0 40px;
+        transition: all 0.3s;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+        font-size: 24px;
+        justify-content: flex-end;
+    }
+    
+    nav .navbar {
+        position: relative;
+        /* left: 66.4vw; */
+        transition: 1s;
+    }
+    
+    nav .navbar .sub-nav {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav .navbar ul+li {
+        display: inline-block;
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
+    }
+    
+    nav .navbar ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        transition: 0.4s;
+    }
+    
+    nav .logo {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        background-color: #e04444;
+        color: #ffff;
+        width: 250px;
+        height: 85px;
+        font-weight: 400;
+        overflow: hidden;
+        transition: 1.4s;
+    }
+    
+    nav .navbar ul li a {
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: #ffff;
+        width: 25px;
+        height: 100px;
+        margin: 0 12px;
+        text-decoration: none;
+        font-family: inherit;
+        letter-spacing: 1px;
+        transition: 1s;
+        transition: all 100ms;
+    }
+    
+    nav .navbar ul li:hover {
+        background-color: #2e54ffbd;
+        transition: 0.2s;
+    }
+    
+    nav .navbar ul li a:active {
+        background-color: #ff2e2eef;
+        height: 1.8em;
+        transition: 4ms;
+        box-sizing: border-box;
+    }
+    
+    .scrollPageNav {
+        width: 100vw;
+        height: 85px;
+        padding: 5px 40px;
+        background-color: #0e0e0e;
+        /* backdrop-filter: blur(50px); */
+        transition: all 0.4s;
+        z-index: 100;
+    }
+    
+    .scrollPageNav .navbar {
+        transform: translateX(-32vw);
+        transition: 1s;
+    }
+    
+    .scrollPageNav .navbar ul li a {
+        color: #ffff;
+        transition: 0.3s;
+    }
+    
+    .scrollPageNav li:not(.sub-line) {
+        border: 2.5px solid #eee4e4;
+        transition: 0.4s;
+        opacity: 1;
+    }
+    
+    .scrollPageNav .logo {
+        transform: translateX(-999px);
+        background-color: #070707;
+        transition: 0.4s;
+    }
+    
+    main {
+        display: flex;
+        padding: 0 100px;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .ml10 {
+        position: relative;
+        margin: 0;
+    }
+    
+    .ml10 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+    .ml10 .landing-text {
+        margin-top: 68px;
+        font-weight: 580;
+        font-size: 10.5vmax;
+        line-height: 130px;
+        letter-spacing: -5px;
+        padding-right: 0px;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-weight: extra-bold;
+        display: inline-block;
+    }
+    
+    .shape1 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: -10;
+    }
+    
+    .button {
+        display: flex;
+        margin: 38px auto 0;
+        padding: 10px;
+        width: 90vmax;
+        height: 18vmax;
+        border-radius: 8px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #161616;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    .button .card {
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        width: 44vmax;
+        height: 8vmax;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #2e89ffef;
+    }
+    /* .button .card:nth-child(2n+1) {
+        background-color: #e04444;
+    } */
+    
+    .button .card a {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        color: inherit;
+        text-align: center;
+        line-height: 8vmax;
+        padding: auto;
+        font-size: 2em;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    
+    .button .card a::after {
+        content: '\00bb';
+        position: absolute;
+        margin-left: -20px;
+        transition: 0.2s;
+        opacity: 0;
+    }
+    
+    .button .card a:hover::after {
+        position: relative;
+        margin-left: 12px;
+        opacity: 1;
+    }
+    
+    .button .card a:hover {
+        border-radius: 8px;
+        padding: auto;
+        background: var(--clr);
+    }
+    
+    .button .card a:active {
+        padding: auto;
+        color: #0e0e0e;
+        background-color: #eee4e4;
+        transition: 0.1s;
+    }
+    
+    .content {
+        display: flex;
+        margin: 38px auto 0;
+        padding: 24px 24px 0;
+        width: 90vw;
+        height: fit-content;
+        border-radius: 8px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #161616;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: flex-start;
+    }
+    
+    .content .tentang {
+        text-align: center;
+        line-height: center;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 3.8em;
+        background-color: #2e89ffef;
+    }
+    
+    .content .tentang:hover {
+        cursor: pointer;
+    }
+    
+    .line {
+        position: absolute;
+        background: url("/img-abstract/Abstract-line.svg");
+        background-repeat: no-repeat;
+        filter: opacity(0.5);
+        color: #5cff33;
+        width: 100%;
+        top: 110px;
+        left: 0;
+        bottom: 0;
+        z-index: -10;
+    }
+    
+    .menu-overlay {
+        display: none;
+    }

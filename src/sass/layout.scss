@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800;900&display=swap');
+$main-black-color: #0f1f68b0;
+$main-green-color: #33eb52;
+$main-purple-color: #8d64ff;
+$main-green-gradient-background: linear-gradient(180deg,
+#ae8ef4 0%,
+#6f41d3 100%);
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body {
+    overflow-x: hidden;
+} */
+
+
+/* body::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6f41d3;
+    border-radius: 50px;
+} */
+
+
+/* ====================================================== */
+
+
+/* Nav */
+
+
+/* ====================================================== */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    padding: 15px 40px;
+    transition: all 1s;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    z-index: 100;
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        ul li {
+            list-style: none;
+            display: inline-block;
+            a {
+                position: relative;
+                color: white;
+                margin: 0 5px;
+                text-decoration: none;
+                font-family: inherit;
+                letter-spacing: 1px;
+                transition: all 100ms;
+                border-radius: 50px;
+            }
+            a:hover {
+                color: var(--main-green-color);
+                transition: 100ms;
+                box-sizing: border-box;
+                /* #0099ff */
+                /* background-color: #13324e;*/
+            }
+        }
+    }
+}
+
+
+/* ====================================================== */
+
+
+/* Sticky / scrollPageNav */
+
+
+/* ====================================================== */
+
+.scrollPageNav {
+    width: 100vw;
+    padding: 5px 40px;
+    background-color: $main-purple-color;
+    transition: all 1s;
+    backdrop-filter: blur(70px);
+}
+
+
+/* ====================================================== */
+
+
+/* main */
+
+
+/* ====================================================== */
+
+main {
+    width: 100%;
+}
+
+
+/* ====================================================== */
+
+
+/* wrapper */
+
+
+/* ====================================================== */
+
+.title {
+    display: flex;
+    margin: 100px auto;
+    padding: 0 60px;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        text-align: center;
+        position: relative;
+        left: 0;
+        margin: 0;
+        color: #0f1f68b0;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: bold;
+        height: 2em;
+        line-height: 98%;
+        letter-spacing: 0.5;
+        margin-bottom: 40px;
+        font-family: "Playfair Display", sans-serif;
+    }
+    p {
+        color: #0f1f68b0;
+        padding: 0 60px;
+        font-size: 1.5vw;
+        font-weight: lighter;
+        text-align: center;
+        letter-spacing: 0.8px;
+        font-family: "Poppins", sans-serif;
+        font-weight: normal;
+        margin: 28px 0 0;
+    }
+}
+
+// .btn {
+//     position: relative;
+//     width: 32px;
+//     height: 32px;
+//     margin: 0;
+//     padding: 25px;
+//     color: #1e212d;
+//     background-color: #ff7878;
+//     border: solid 1px #1e212d21;
+//     border-radius: 100%;
+//     transition: 200ms ease-in-out;
+// }
+
+/* ==========================   ============================ */
+
+
+/* content */
+
+
+/* ====================================================== */
+
+.wrap-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.love {
+    display: flex;
+    padding: 20px;
+    width: 65%;
+    border-radius: 44px;
+    background: linear-gradient(180deg, #33eb52 98.6%, #8d64ff 60%);
+}
+
+.love h4 {
+    display: flex;
+    font-size: 1.5rem;
+    color: #0a1744;
+    margin: 20px;
+    text-align: right;
+    margin-right: 50px;
+    font-weight: normal;
+}
+
+.love .myImage {
+    width: 300px;
+    height: 330px;
+    border-radius: 20px;
+}
+
+
+/* ====================================================== */
+
+
+/* icon-skills */
+
+
+/* ====================================================== */
+
+.icon-skill {
+    margin: 60px;
+    ul {
+        display: flex;
+        background-color: black;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+.title-skill {
+    font-size: 3vw;
+    font-family: "Poppins";
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+}
+
+.icon-skill ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 12px;
+    width: 120px;
+    height: 120px;
+    border-radius: 28px;
+    color: white;
+    background-color: #33eb52;
+    backdrop-filter: blur(10);
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+}
+
+.icon-skill ul li::before {
+    content: "";
+    position: absolute;
+    top: 67px;
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    filter: blur(20px);
+    background-color: #33eb52;
+    z-index: -10;
+}
+
+
+/* ====================================================== */
+
+
+/* Works */
+
+
+/* ====================================================== */
+
+.title-works {
+    font-size: 3vw;
+    font-family: "Poppins";
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+}
+
+.works ul {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
