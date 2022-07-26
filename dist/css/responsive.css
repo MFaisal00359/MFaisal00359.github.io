@@ -15,8 +15,29 @@
     .ml10 {
         display: none;
     }
-    .line {
-        top: 190px;
+    .button {
+        width: 80vw;
+        padding: 8px 8px 0;
+        height: min-content;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    .button .card {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .button .card a {
+        font-size: 2rem;
+    }
+    .tentang {
+        width: 80vw;
+        margin: 14px auto 0;
+    }
+    .tentang summary {
+        font-size: 1.8em;
     }
     .menu {
         position: absolute;
@@ -130,8 +151,9 @@
 @media screen and (max-width: 605px) {
     .button {
         width: 80vw;
-        height: 250px;
-        padding: 4px 8px;
+        padding-bottom: 0;
+        padding-top: 4px;
+        height: min-content;
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: nowrap;
@@ -139,13 +161,11 @@
         align-items: center;
     }
     .button .card {
+        margin-bottom: 4px;
         width: 100%;
     }
     .button .card a {
         font-size: 2rem;
-    }
-    .content {
-        margin-top: 90px;
     }
     .tentang {
         width: 80vw;
@@ -155,3 +175,5 @@
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width: 605px) {}
