@@ -32,11 +32,11 @@
     .button .card a {
         font-size: 2rem;
     }
-    .tentang {
+    details {
         width: 80vw;
         margin: 14px auto 0;
     }
-    .tentang summary {
+    details>summary {
         font-size: 1.8em;
     }
     .menu {
@@ -167,13 +167,12 @@
     .button .card a {
         font-size: 2rem;
     }
-    .tentang {
+    .button .card a::after {}
+    details {
         width: 80vw;
         margin: 14px auto 0;
     }
-    .tentang summary {
+    details summary {
         font-size: 2rem;
     }
 }
-
-@media screen and (max-width: 605px) {}
