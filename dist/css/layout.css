@@ -7,8 +7,13 @@ body {
     font-weight: 400px;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     overflow-x: hidden;
     background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -24,7 +29,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
-.landing {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,14 +37,17 @@ body::-webkit-scrollbar-thumb {
     padding-top: 142px;
 }
 
-.My-foto {
+.mb {
+    margin-bottom: 44px;
+}
+
+.container .My-foto {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0px;
     gap: 44px;
-    margin-bottom: 44px;
 }
 
 .My-foto::before {
@@ -55,20 +63,21 @@ body::-webkit-scrollbar-thumb {
     width: 770px;
     height: 170px;
     background-color: #F4F4F4;
-    margin-bottom: 44px;
 }
 
 .text-1>p {
     display: inline-block;
+    margin: 0;
+    padding: 16px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 160%;
     /* or 29px */
     text-align: center;
     letter-spacing: 0.025em;
-    color: #000000;
+    color: #181818;
 }
 
 .social {
@@ -82,8 +91,8 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     text-align: center;
     gap: 32px;
-    width: 64px;
-    height: 64px;
+    min-width: 4rem;
+    min-height: 4rem;
     border-radius: 100%;
     background-color: #F4F4F4;
 }
@@ -99,9 +108,15 @@ body::-webkit-scrollbar-thumb {
     top: 26%;
     bottom: 72.39%;
     border-radius: 100%;
-    background: var(--clr);
+    transition: 0.5s;
+}
+
+.social span:hover {
+    background: #ffece1;
 }
 
 .social span a:hover {
-    transform: scale(-7px);
+    transform: scale(130%) rotate(20deg);
+    transition: 0.3s;
+    background: var(--clr);
 }
